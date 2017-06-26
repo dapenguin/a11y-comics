@@ -1,0 +1,35 @@
+$mediaQueryMinBreakpoints: (
+  small: 480px,
+  medium: 768px,
+  large: 1024px
+);
+
+$mediaQueryMaxBreakpoints: (
+  small: 479px,
+  medium: 767px,
+  large: 1023px
+);
+
+@mixin minBreakpoint($breakpoint) {
+  // If the breakpoint passed cannot be found in the map, then assume it
+  // is a custom breakpoint size.
+  $breakpointSize: $breakpoint;
+
+  @if (map-has-key($mediaQueryMinBreakpoints, $breakpoint)) {
+    $breakpointSize: map-get($mediaQueryMinBreakpoints, $breakpoint);
+  }
+
+  @media (min-width: $breakpointSize) { @content; }
+}
+
+@mixin maxBreakpoint($breakpoint) {
+  // If the breakpoint passed cannot be found in the map, then assume it
+  // is a custom breakpoint size.
+  $breakpointSize: $breakpoint;
+
+  @if (map-has-key($mediaQueryMaxBreakpoints, $breakpoint)) {
+    $breakpointSize: map-get($mediaQueryMaxBreakpoints, $breakpoint);
+  }
+
+  @media (max-width: $breakpointSize) { @content; }
+}
