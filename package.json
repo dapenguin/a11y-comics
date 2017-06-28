@@ -12,7 +12,7 @@
     "build:css": "npm run sass && npm run autoprefixer",
     "sass": "node-sass ./sass/main.scss ./public/css/style.css",
     "autoprefixer": "postcss ./public/css/style.css -o ./public/css/style.min.css -u autoprefixer -u cssnano -m ./public/css/style.map",
-    "watch:css": "onchange './sass/**/*.scss' './components/**/*.scss' -- npm run build:css"
+    "watch:css": "onchange './sass/**/*.scss' './pages/**/*.scss' -- npm run build:css"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
