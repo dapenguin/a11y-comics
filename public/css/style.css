@@ -502,6 +502,8 @@ input.product-tile__buyButton::-moz-focus-inner, input.product-tile__subscribeBu
   width: 300px; }
 
 .product-tile__name {
+  font-size: 1.25em;
+  font-weight: bold;
   margin: 0; }
   .product-tile__name a {
     color: #0a0a0a; }
