@@ -1,5 +1,17 @@
 main {
 	margin: 0 auto;
 	max-width: 960px;
-	padding: 0 0 1.5em;
+	overflow: hidden;
+	padding: 0 1em 1.5em;
+}
+
+.primary {
+	float: left;
+	width: 624px;
+}
+
+.secondary {
+	float: left;
+	margin: 0 0 0 44px;
+	width: 292px;
 }

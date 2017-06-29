@@ -2,3 +2,7 @@
 $fontSize8px: 8px; // Had to set in px as Chrome wouldn't let me go lower than 9px using ems.
 $fontSize12px: .75em;
 $fontSize18px: 1.125em;
+
+// Font Stacks
+$fontStackComicSans: "Comic Sans MS", sans-serif;
+$fontStackLucidaGrande: "Lucida Grande", Helvetica, Arial, sans-serif;

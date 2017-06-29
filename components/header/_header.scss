@@ -1,0 +1,15 @@
+.header {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 1em 2em;
+	text-align: center;
+}
+
+.header_site-name {
+	font-family: $fontStackLucidaGrande;
+	font-size: 3em;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0;
+}

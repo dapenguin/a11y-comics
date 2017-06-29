@@ -3,18 +3,23 @@
 @import 'variables/colors';
 @import 'variables/fonts';
 @import 'mixins/mediaQueries';
+@import 'mixins/a11y';
 
 // GLOBAL STYLES
 @import 'universal/normalize';
 @import 'body';
 @import 'layout';
+@import 'typography';
 
 // COMPONENTS
+@import '../components/buttons/buttons';
 @import '../components/header/header';
 @import '../components/nav/nav';
 @import '../components/footer/footer';
 @import '../components/product-list/product-list';
 @import '../components/product-tile/product-tile';
+@import '../components/events/events';
+@import '../components/opening-times/opening-times';
 
 // PAGES
 @import '../pages/home-page/home-page';

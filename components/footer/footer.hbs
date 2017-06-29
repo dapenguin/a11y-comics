@@ -1,16 +1,35 @@
-<footer class="footer">
-	<ul class="footer_list">
-		<li class="footer_list-item">
-			<a class="footer_link" href="/about">About us</a>
-		</li>
-		<li class="footer_list-item">
-			<a class="footer_link" href="/delivery">Delivery</a>
-		</li>
-		<li class="footer_list-item">
-			<a class="footer_link" href="/returns-policy">Returns policy</a>
-		</li>
-		<li class="footer_list-item">
-			<a class="footer_link" href="/contact-us">Contact us</a>
-		</li>
-	</ul>
-</footer>
+{{#if @root.a11y}}
+	<footer class="footer">
+		<ul class="footer_list">
+			<li class="footer_list-item">
+				<a class="footer_link" href="/about">About us</a>
+			</li>
+			<li class="footer_list-item">
+				<a class="footer_link" href="/delivery">Delivery</a>
+			</li>
+			<li class="footer_list-item">
+				<a class="footer_link" href="/returns-policy">Returns policy</a>
+			</li>
+			<li class="footer_list-item">
+				<a class="footer_link" href="/contact-us">Contact us</a>
+			</li>
+		</ul>
+	</footer>
+{{else}}
+	<div class="footer">
+		<ul class="footer_list">
+			<li class="footer_list-item">
+				<a class="footer_link" href="/about">About us</a>
+			</li>
+			<li class="footer_list-item">
+				<a class="footer_link" href="/delivery">Delivery</a>
+			</li>
+			<li class="footer_list-item">
+				<a class="footer_link" href="/returns-policy">Returns policy</a>
+			</li>
+			<li class="footer_list-item">
+				<a class="footer_link" href="/contact-us">Contact us</a>
+			</li>
+		</ul>
+	</footer>
+{{/if}}

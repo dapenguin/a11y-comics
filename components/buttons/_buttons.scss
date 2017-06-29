@@ -1,0 +1,49 @@
+%button {
+	background: $colorYellow;
+	border: 3px solid $colorBlack;
+	border-radius: 15px;
+	color: $colorBodyCopy;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $fontStackComicSans;
+	font-size: 1.25em;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 2px 20px 3px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-appearance: none;
+	white-space: nowrap;
+
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+/* Needed to remove extra padding included by Firefox */
+input%button::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+%primaryButton {
+	@extend %button;
+}
+
+%secondaryButton {
+	@extend %button;
+
+	background: $colorBlack;
+	color: $colorYellow;
+}
+
+%tertiaryButton {
+	@extend %button;
+
+	background: #000;
+	border: 1px solid #000;
+}

@@ -6,3 +6,7 @@
 	top: auto;
 	width: 1px;
 }
+
+.visually-hidden {
+	@include visuallyHidden;
+}

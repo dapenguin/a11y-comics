@@ -5,13 +5,16 @@
 			<img class="product-tile__image" src="{{img}}" alt="">
 		</a>
 	</h3>
-	<p class="product-tile__price">{{{price}}}</p>
+	<p class="product-tile__price">Price: {{{price}}}</p>
+	{{#if promo}}
+		<p class="product-tile__promo">{{{promo}}}</p>
+	{{/if}}
 	<form class="product-tile__buyForm" action="/buy">
 		<input name="productId" id="productId" type="hidden" value="{{id}}" />
-		<button class="product-tile__buyButton" type="submit">Add {{{name}}} to basket</button>
+		<button class="product-tile__buyButton" type="submit">Add <span class="visually-hidden">{{{name}}} </span>to basket</button>
 	</form>
 	<form class="product-tile__subscribeForm" action="/subscribe">
 		<input name="productId" id="productId" type="hidden" value="{{id}}" />
-		<button class="product-tile__subscribeButton" type="submit">Add {{{name}}} to subscription</button>
+		<button class="product-tile__subscribeButton" type="submit">Add <span class="visually-hidden">{{{name}}} </span>to subscription</button>
 	</form>
 </li>

@@ -1,5 +1,11 @@
 <h1>Welcome to The Comic Emporium</h1>
-<h2 class="home-page_section-heading">This week's top new comic releases</h2>
-{{>product-list topNewComics}}
-<h2 class="home-page_section-heading">Top back issues in stock</h2>
-{{>product-list topBackIssues}}
+<div class="primary">
+	<h2 class="home-page_section-heading">This week's top new comic releases</h2>
+	{{>product-list topNewComics}}
+	<h2 class="home-page_section-heading">Top back issues in stock</h2>
+	{{>product-list topBackIssues}}
+</div>
+<div class="secondary">
+	{{>events}}
+	{{>opening-times}}
+</div>

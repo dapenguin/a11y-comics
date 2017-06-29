@@ -18,7 +18,8 @@ module.exports = {
 			"id": id++,
 			"name": "Windblade #4 Dawn Of The Autobots",
 			"img": "https://dyn0.media.forbiddenplanet.com/products/diamond/STK642/STK642706.jpg.square-true_maxheight-160_size-160.jpg",
-			"price": "&pound;2.25"
+			"price": "&pound;2.25",
+			"promo": "Free t-shirt"
 		},
 		{
 			"id": id++,
