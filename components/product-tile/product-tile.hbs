@@ -1,16 +1,16 @@
 <li class="product-tile">
-	<a class="product-tile__image" href="/pdp/{{id}}">
-		<img src="{{img}}" alt="{{{name}}}">
-	</a>
-	<h3 class="product-tile__name">
-		<a href="/pdp/{{id}}">
-			{{{name}}}
-		</a>
-	</h3>
-	<p class="product-tile__price">Price: {{{price}}}</p>
 	{{#if promo}}
 		<p class="product-tile__promo">{{{promo}}}</p>
 	{{/if}}
+	<a class="product-tile__image" href="/pdp/{{id}}">
+		<img src="{{img}}" alt="{{{name}}}">
+	</a>
+	<p class="product-tile__name">
+		<a href="/pdp/{{id}}">
+			{{{name}}}
+		</a>
+	</p>
+	<p class="product-tile__price">Price: {{{price}}}</p>
 	<form class="product-tile__buyForm" action="/buy">
 		<input name="productId" id="productId" type="hidden" value="{{id}}" />
 		<button class="product-tile__buyButton" type="submit">Add <span class="visually-hidden">{{{name}}} </span>to basket</button>
