@@ -8,8 +8,7 @@
 	font-size: 1.25em;
 	padding: 0.2em 0.5em 0.5em;
 	position: relative;
-	margin-left: -0.5em;
-	margin-right: -0.5em;
+	margin: .85em -0.5em;
 
 	&:before {
 		background: $colorBlack;
@@ -51,5 +50,7 @@
 // .events__list-item
 .events__name {
 	font-size: 1.125em;
+	font-weight: bold;
+	margin: 1em 0 0.5em;
 }
 // .events__info

@@ -8,8 +8,7 @@
 	font-size: 1.25em;
 	padding: 0.2em 0.5em 0.5em;
 	position: relative;
-	margin-left: -0.5em;
-	margin-right: -0.5em;
+	margin: .85em -0.5em;
 
 	&:before {
 		background: $colorBlack;
@@ -47,9 +46,3 @@
 	padding: 0;
 	margin: 0;
 }
-
-// .opening-times__list-item
-.opening-times__name {
-	font-size: 1.125em;
-}
-// .opening-times__info
