@@ -11,12 +11,6 @@
 		</a>
 	</p>
 	<p class="product-tile__price">Price: {{{price}}}</p>
-	<form class="product-tile__buyForm" action="/buy">
-		<input name="productId" id="productId" type="hidden" value="{{id}}" />
-		<button class="product-tile__buyButton" type="submit">Add <span class="visually-hidden">{{{name}}} </span>to basket</button>
-	</form>
-	<form class="product-tile__subscribeForm" action="/subscribe">
-		<input name="productId" id="productId" type="hidden" value="{{id}}" />
-		<button class="product-tile__subscribeButton" type="submit">Add <span class="visually-hidden">{{{name}}} </span>to subscription</button>
-	</form>
+	<div class="product-tile__buyButton" data-product-id="{{id}}">Add to basket</div>
+	<div class="product-tile__subscribeButton" data-product-id="{{id}}">Add to subscription</div>
 </li>
