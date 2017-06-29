@@ -11,3 +11,4 @@ Demo online comic store for accessibility presentation
 
 ## Run
 `npm run start:dev`
+Open `http://localhost:3000` in your browser
