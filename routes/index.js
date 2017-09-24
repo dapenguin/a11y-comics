@@ -5,8 +5,6 @@ const newComics = require('../data/new-comics');
 const backIssues = require('../data/back-issues');
 const events = require('../data/events');
 
-const a11yVersion = false;
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	const topNewComics = newComics.comics.slice(0, 4);
@@ -24,8 +22,7 @@ router.get('/', function(req, res, next) {
 			},
 			upcomingEvents: {
 				events: upcomingEvents
-			},
-			a11y: a11yVersion
+			}
 		}
 	);
 });
@@ -37,8 +34,7 @@ router.get('/new-comics', function(req, res, next) {
 		{
 			title: 'This week\'s new comics',
 			comics: comics,
-			pageH1: "This week's new comic releases",
-			a11y: a11yVersion
+			pageH1: "This week's new comic releases"
 		}
 	);
 });
@@ -50,8 +46,7 @@ router.get('/back-issues', function(req, res, next) {
 		{
 			title: 'Back issues',
 			comics: comics,
-			pageH1: "Back issues",
-			a11y: a11yVersion
+			pageH1: "Back issues"
 		}
 	);
 });
