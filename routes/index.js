@@ -3,6 +3,7 @@ var router = express.Router();
 
 const newComics = require('../data/new-comics');
 const backIssues = require('../data/back-issues');
+const events = require('../data/events');
 
 const a11yVersion = false;
 
@@ -10,6 +11,7 @@ const a11yVersion = false;
 router.get('/', function(req, res, next) {
 	const topNewComics = newComics.comics.slice(0, 4);
 	const topBackIssues = backIssues.comics.slice(0, 4);
+	const upcomingEvents = events.events.slice(0, 3);
 
 	res.render('index',
 		{
@@ -19,6 +21,9 @@ router.get('/', function(req, res, next) {
 			},
 			topBackIssues: {
 				comics: topBackIssues
+			},
+			upcomingEvents: {
+				events: upcomingEvents
 			},
 			a11y: a11yVersion
 		}
