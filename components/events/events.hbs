@@ -1,17 +1,13 @@
 <div class="events">
 	<h3 class="events__heading">Events</h3>
 	<ul class="events__list">
-		<li class="events__list-item">
-			<p class="events__name">
-				30-07-2017 - Stan Lee Signing
-			</p>
-			<p class="events__info">Consectetur adipisicing elit. Officia qui architecto, commodi reiciendis aliquid praesentium culpa repellat enim provident explicabo, dolorem aperiam, labore sint in. Harum ratione nesciunt vel commodi!</p>
-		</li>
-		<li class="events__list-item">
-			<p class="events__name">
-				17-08-2017 - Star Wars Panel
-			</p>
-			<p class="events__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia qui architecto, commodi reiciendis aliquid praesentium culpa repellat enim provident explicabo, dolorem aperiam, labore sint in. Harum ratione nesciunt vel commodi!</p>
-		</li>
+		{{#each events}}
+			<li class="events__list-item">
+				<p class="events__name">
+					{{date}} - {{title}}
+				</p>
+				<p class="events__info">{{info}}</p>
+			</li>
+		{{/each}}
 	</ul>
 </div>
